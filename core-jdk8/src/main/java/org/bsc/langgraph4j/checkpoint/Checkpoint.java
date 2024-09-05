@@ -78,7 +78,7 @@ public class Checkpoint {
     public Checkpoint updateState(Map<String,Object> values, Map<String, Channel<?>> channels ) {
 
         Checkpoint result = new Checkpoint( this );
-        result.state = AgentState.updateState( state, values, channels );;
+        result.state = AgentState.updateState( state, values, channels );
         return result;
     }
 
